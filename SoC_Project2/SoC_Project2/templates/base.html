@@ -55,19 +55,9 @@
                 <!-- Divider -->
                 <hr class="sidebar-divider">
                 
-                <!-- Nav Item - Department -->
-                <li class="nav-item active">
-                    <a class="nav-link" href=''>
-                    <i class="icon ion-md-code"></i>
-                    <span>PRACTICE</span></a>
-                </li>
-
-                <!-- Divider -->
-                <hr class="sidebar-divider">
-                
                 <!-- Nav Item - Subject -->
                 <li class="nav-item active">
-                    <a class="nav-link" href=''>
+                    <a class="nav-link" href={% url 'compete' %}>
                     <i class="icon ion-md-trophy"></i>
                     <span>COMPETE</span></a>
                 </li>
@@ -77,7 +67,7 @@
 
                 <!-- Nav Item - Question Papers -->
                 <li class="nav-item active">
-                    <a class="nav-link" href=''>
+                    <a class="nav-link" href={% url 'leaderboard' %}>
                     <i class="icon ion-md-podium"></i>
                     <span>LEADERBOARD</span></a>
                 </li>
@@ -87,7 +77,7 @@
                 
                 <!-- Nav Item - Notes -->
                 <li class="nav-item active">
-                    <a class="nav-link" href=''>
+                    <a class="nav-link" href={% url 'mentors' %}>
                     <i class="icon ion-ios-people"></i>
                     <span>MENTORS</span></a>
                 </li>

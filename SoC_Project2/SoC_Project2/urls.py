@@ -16,6 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from SoC_Project2.core import views
+
 urlpatterns = [
+    path('', views.dashboard, name='dashboard'),
+    path('contests/', views.compete, name='compete'),
+    path('leaderboard/', views.leaderboard, name='leaderboard'),
+    path('mentors/', views.mentors, name='mentors'),
     path('admin/', admin.site.urls),
 ]

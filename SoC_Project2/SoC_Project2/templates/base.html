@@ -32,12 +32,12 @@
         <div id="wrapper">
         
             <!-- Sidebar -->
-            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <ul class="navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
             
                 <!-- Sidebar - Brand -->
                 <a class="sidebar-brand d-flex align-items-center justify-content-center" href={% url 'dashboard' %}>
                     <div class="sidebar-brand-icon rotate-n-15">
-                        <i class="fas fa-laugh-wink"></i>
+                        <i class="icon ion-ios-code"></i>
                     </div>
                     <div class="sidebar-brand-text mx-3">CODE<sup>GNDU</sup></div>
                 </a>
@@ -48,7 +48,7 @@
                 <!-- Nav Item - Home -->
                 <li class="nav-item active">
                     <a class="nav-link" href={% url 'dashboard' %}>
-                    <i class="icon ion-md-home"></i>
+                    <i class="icon ion-ios-speedometer"></i>
                     <span>DASHBOARD</span></a>
                 </li>
 
@@ -58,7 +58,7 @@
                 <!-- Nav Item - Department -->
                 <li class="nav-item active">
                     <a class="nav-link" href=''>
-                    <i class="icon ion-md-briefcase"></i>
+                    <i class="icon ion-md-code"></i>
                     <span>PRACTICE</span></a>
                 </li>
 
@@ -68,7 +68,7 @@
                 <!-- Nav Item - Subject -->
                 <li class="nav-item active">
                     <a class="nav-link" href=''>
-                    <i class="icon ion-md-clipboard"></i>
+                    <i class="icon ion-md-trophy"></i>
                     <span>COMPETE</span></a>
                 </li>
 
@@ -78,7 +78,7 @@
                 <!-- Nav Item - Question Papers -->
                 <li class="nav-item active">
                     <a class="nav-link" href=''>
-                    <i class="icon ion-md-copy"></i>
+                    <i class="icon ion-md-podium"></i>
                     <span>LEADERBOARD</span></a>
                 </li>
 
@@ -88,7 +88,7 @@
                 <!-- Nav Item - Notes -->
                 <li class="nav-item active">
                     <a class="nav-link" href=''>
-                    <i class="icon ion-md-document"></i>
+                    <i class="icon ion-ios-people"></i>
                     <span>MENTORS</span></a>
                 </li>
 
@@ -102,18 +102,12 @@
                     <!-- Topbar -->
                     <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-
-                        <!-- Sidebar Toggle (Topbar) -->
-                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                            <i class="icon ion-md-menu"></i>
-                        </button>
-
                         <!-- Topbar Search -->
                         <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                           <div class="input-group">
                             <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                              <button class="btn btn-primary" type="button">
+                              <button class="btn btn-danger" type="button">
                                 <i class="icon ion-md-search"></i>
                               </button>
                             </div>
@@ -174,4 +168,11 @@
         </div>
 
     {% endblock %}
+
+    <!-- Custom scripts for all pages-->
+    <script src="{% static 'js/base.min.css' %}"></script>
+
+    <!-- Page level plugins -->
+    <script src="{% static 'js/base.min.css' %}"></script>
+
     </body>

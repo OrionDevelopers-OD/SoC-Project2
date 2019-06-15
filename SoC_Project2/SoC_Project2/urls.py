@@ -23,5 +23,6 @@ urlpatterns = [
     path('contests/', views.compete, name='compete'),
     path('leaderboard/', views.leaderboard, name='leaderboard'),
     path('mentors/', views.mentors, name='mentors'),
+    path('profilepersonname/', views.profile, name='profile'),
     path('admin/', admin.site.urls),
 ]

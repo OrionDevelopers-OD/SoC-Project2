@@ -11,3 +11,6 @@ def leaderboard(request):
 
 def mentors(request):
     return render(request, 'mentors.html')
+
+def profile(request):
+    return render(request, 'profile.html')

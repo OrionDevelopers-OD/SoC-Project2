@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <h1 class="h3 mb-0 text-gray-800"><b>User Profile</b></h1>
+            </div>
+
+            <!-- Divider -->
+            <hr class="heading-divider">
+
+            <!-- Content Row -->
+            <div class="row">
+
+                <!-- card - Profile card -->
+                <div class="col-xl-12">
+                    <div class="card border-left-danger shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <!-- profile image -->
+                                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">id</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Name</div>
+                                </div>
+                                <div class="col mr-2">
+                                    <div class="h8 mb-0 font-weight-bold text-gray-800">About them</div>
+                                </div>  
+                                <div class="col mr-2">
+                                    <div class="h8 mb-0 font-weight-bold text-gray-800">About Skills</div>
+                                </div>                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <!-- Divider -->
+            <hr class="heading-divider">
+
+            <div class="row">
+
+                <!-- card - Badges card -->
+                <div class="col-xl-12">
+                    <div class="card border-left-danger shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="h3 mb-0 font-weight-bold text-danger">Badges</div>
+                                </div>                              
+                            </div>
+                            <!-- Divider -->
+                            <hr class="heading-divider">
+                            <div class="row no-gutters align-items-center">
+                                <!-- add badges -->      
+                                <div class="h3 mb-0 "></div>                      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <!-- Divider -->
+            <hr class="heading-divider">
+
+            <div class="row">
+
+                <!-- card - Badges card -->
+                <div class="col-xl-12">
+                    <div class="card border-left-danger shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div class="h3 mb-0 font-weight-bold text-danger">Contest History</div>
+                                </div>                              
+                            </div>
+                            <!-- Divider -->
+                            <hr class="heading-divider">
+                            <div class="row no-gutters align-items-center">
+                                <!-- add badges -->      
+                                <div class="h3 mb-0 "></div>                      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>        
+
+{% endblock %}

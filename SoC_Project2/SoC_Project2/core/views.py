@@ -1,11 +1,10 @@
 from django.shortcuts import render
+from SoC_Project2.problems.models import Challenges
 
 
-def dashboard(request):
-    return render(request, 'dashboard.html')
-
-def compete(request):
-    return render(request, 'compete.html')
+def dashboard(request): 
+    all_challenges = Challenges.objects.all()
+    return render(request, 'dashboard.html', {'challenges': all_challenges})
 
 def leaderboard(request):
     return render(request, 'leaderboard.html')

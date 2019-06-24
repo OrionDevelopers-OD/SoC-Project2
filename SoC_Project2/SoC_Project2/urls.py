@@ -22,9 +22,8 @@ from SoC_Project2.problems import problemviews
 urlpatterns = [
     path('', views.dashboard, name='dashboard'),
     path('contests/', include(([
-        path('', views.compete, name='compete'),
-        path('weekly/', problemviews.challenge, name='weekly_challenge_list'),
-        path('weekly/week<int:week>/', problemviews.weekly_challenge, name='weekly_challenge'),
+        path('', problemviews.ChallengeListView.as_view(), name='compete'),
+        path('week<int:week>/', problemviews.challengeView, name='weekly_challenge'),
     ], 'core'), namespace='challenges')),   
     path('leaderboard/', views.leaderboard, name='leaderboard'),
     path('mentors/', views.mentors, name='mentors'),

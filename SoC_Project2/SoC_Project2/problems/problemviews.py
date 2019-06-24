@@ -1,12 +1,19 @@
 from django.shortcuts import render
-from .models import WeeklyChallenges
+from .models import contestName, Challenges
+from django.views.generic import ListView, DetailView
 
 
-def challenge(request):
-    all_challenges = WeeklyChallenges.objects.all()
-    return render(request, 'challenge_list.html', {'challenges': all_challenges})
+class ChallengeListView(ListView):
+    model=Challenges
+    ordering = ('problem_name',)
+    context_object_name = 'challenge_list'
+    template_name = 'compete.html'
+
+    def get_queryset(self):
+        queryset = Challenges.objects.all()
+        return queryset
 
 
-def weekly_challenge(request, week):
-    obj = WeeklyChallenges.objects.get(week=week)
-    return render(request, 'weekly_challenge.html', {'object': obj})
+def challengeView(request, week):
+    obj = Challenges.objects.get(week=week)
+    return render(request, 'challenges.html', {'object': obj})

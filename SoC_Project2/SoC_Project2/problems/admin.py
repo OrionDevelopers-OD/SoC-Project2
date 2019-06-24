@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-from .models import WeeklyChallenges
+from .models import contestName, Challenges
 
 
-admin.site.register(WeeklyChallenges)
+admin.site.register(Challenges)
+admin.site.register(contestName)

@@ -1,0 +1,1 @@
+web: gunicorn SoC_Project1.wsgi

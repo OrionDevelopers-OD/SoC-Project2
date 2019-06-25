@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'SoC_Project2.core',
     'SoC_Project2.problems',
+    'SoC_Project2.accounts',
 ]
 
 MIDDLEWARE = [

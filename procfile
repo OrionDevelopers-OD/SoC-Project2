@@ -1,3 +1,0 @@
-
-web: gunicorn SoC_Project2.wsgi --log-file -
-

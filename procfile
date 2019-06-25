@@ -1,1 +1,1 @@
-web: gunicorn SoC_Project1.wsgi
+web: gunicorn SoC_Project2.wsgi

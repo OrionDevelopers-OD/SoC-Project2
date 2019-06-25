@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+            <div class="col mr-2">
+                <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Contests</div>
+                <div class="h3 mb-0 font-weight-bold text-gray-800">{{ object.contest }}</div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="heading-divider">
+
+            <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center justify-content-between mb-4 text-danger">
+               <h3><b>{{ object.problem_name }}</b></h3> 
+            </div>
+
+            <div class="col-xl-12">
+                <div class="card shadow h-100 py-2">
+                    <div class="card-body">
+                        <div class="h6 mb-0 text-gray-800"><p> {{ object.problem|linebreaks }} </p></div>
+                        <br>
+                        <div class="text-xs text-uppercase mb-1"><p> Input format: </p></div>
+                        <div class="h6 mb-0 text-gray-800"><p> {{ object.input_format|linebreaks }} </p></div>
+                        <br>
+                        <div class="text-xs text-uppercase mb-1"><p> Output format: </p></div>
+                        <div class="h6 mb-0 text-gray-800"><p> {{ object.output_format|linebreaks }} </p></div>
+                        <br>
+                        <div class="text-xs text-uppercase mb-1"><p> Constraints: </p></div>
+                        <div class="h6 mb-0 text-gray-800"><p> {{ object.constraints|linebreaks }} </p></div>
+                        <br>
+
+                        <!-- Content Row -->
+                        <div class="row">
+                        
+                            <div class="col-lg-6">
+                                <div class="card shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="text-xs text-danger text-uppercase mb-1">Sample Input</div>
+                                        <div class="h6 mb-0 text-gray-800"> {{ object.input_example|linebreaks }} </div>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card shadow h-100 py-2">
+                                    <div class="card-body">
+                                        <div class="text-xs text-danger text-uppercase mb-1">Sample Output</div>
+                                        <div class="h6 mb-0 text-gray-800"> {{ object.output_example|linebreaks }} </div>
+                                    </div>
+                                </div>    
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>    
+            </div>
+
+            <!-- add compiler -->
+
+        </div>
+
+{% endblock %}
